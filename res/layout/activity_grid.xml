@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ygs.virtualfittingroom.drawing.CanvasLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"  > 
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/screen"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:paddingLeft="15dp"
+        android:text="@string/product_title"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" 
+        android:weightSum="1">
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:layout_gravity="center"
+            android:orientation="vertical" >
+
+<GridView
+    android:id="@+id/grid_view"
+    android:layout_width="fill_parent"
+    android:layout_height="108dp"
+    android:columnWidth="90dp"
+    android:gravity="center"
+    android:horizontalSpacing="10dp"
+    android:numColumns="auto_fit"
+    android:stretchMode="columnWidth"
+    android:verticalSpacing="10dp" >
+ 
+</GridView>
+<TextView
+        android:id="@+id/textEnter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:paddingLeft="15dp"
+        android:visibility="gone"
+        android:text="Or Enter your own"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+<EditText
+    android:id="@+id/editText1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:ems="10"
+    android:visibility="gone"
+    android:inputType="textPersonName" >
+</EditText>
+<Button
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:text="Add"
+        android:visibility="gone"
+        android:layout_margin="10dp" />
+
+        </LinearLayout>
+<!-- -->
+        <FrameLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="6dp"
+            android:layout_weight="0.4"
+            android:layout_gravity="center"
+            android:orientation="vertical" >
+ 
+             <ProgressBar                
+        android:layout_width="15dip"       
+        android:layout_height="15dip"
+        android:id="@+id/progress" 
+        android:layout_gravity="top|center"
+        />
+               
+         <ImageView
+             android:id="@+id/imageView1"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center_horizontal|center_vertical"
+             android:src="@drawable/login_button" />
+
+         <ImageView
+             android:id="@+id/artImage"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:src="@drawable/ic_launcher"
+             android:layout_gravity="center"
+             android:visibility="gone"/>
+
+         <EditText
+             android:id="@+id/textMsg"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content" 
+             android:layout_gravity="center"
+             android:visibility="gone">
+
+            
+         </EditText>
+<!-- </com.ygs.virtualfittingroom.drawing.DrawingPanel>
+ -->           </FrameLayout>
+<!-- -->
+   
+        <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:text="Next"
+        android:layout_margin="10dp" />
+    </LinearLayout>
+
+   
+
+</LinearLayout>
+</com.ygs.virtualfittingroom.drawing.CanvasLayout> 

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/screen"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:paddingLeft="15dp"
+        android:text="@string/product_title"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" 
+        android:weightSum="1">
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:layout_gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Category:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#fff" />
+
+            <Spinner
+                android:id="@+id/spinner1"
+                style="@style/style1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#333333"
+                android:popupBackground="#333333"
+                android:prompt="@string/select"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="List:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#fff" />
+
+            <Spinner
+                android:id="@+id/spinner2"
+                style="@style/style1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#333333"
+                android:popupBackground="#333333"
+                android:prompt="@string/select"
+                android:spinnerMode="dropdown" />
+        </LinearLayout>
+       <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="6dp"
+            android:layout_weight="0.4"
+            android:layout_gravity="center"
+            android:orientation="vertical" >
+           
+                 <ProgressBar                
+        android:layout_width="15dip"       
+        android:layout_height="15dip"
+        android:id="@+id/progress" 
+        android:layout_gravity="center"
+        />
+         <ImageView
+           android:id="@+id/imageView1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center_horizontal|center_vertical"
+           android:src="@drawable/login_button" />
+           
+           </LinearLayout>
+
+   
+        <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:text="Next"
+        android:layout_margin="10dp" />
+    </LinearLayout>
+
+   
+
+</LinearLayout>
